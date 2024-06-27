@@ -1,0 +1,351 @@
+:root {
+    --corfundo:#e7e7e7;
+}
+/* Index */
+
+
+main {
+    font-family: Montserrat;
+    font-weight: 400;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--corfundo)
+    
+}
+
+header {
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.header-left-column {
+    width: 25%;
+    display: inline-flex;
+    justify-content: flex-end;    
+}
+
+.header-center-column{
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.header-right-column {
+    width: 25%;    
+}
+
+
+header svg {
+    margin-left: 8px;
+}
+
+
+ header img {
+    
+    float: left;
+    width: 100px;
+    
+} 
+
+.header-input {
+    text-decoration: solid;
+    background-color: var(--corfundo);
+    width: 70%;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    /* padding: 5px; */
+    font-size: 16px;
+    
+}
+
+.header-login {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.header-login:hover{
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-decoration: solid
+}
+
+.header-login:visited { 
+    text-decoration: none; 
+    color: black; 
+    cursor: pointer;
+}
+
+.navega {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navegacao{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: bolder;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: black; 
+    padding: 5px 10px; /* Espaçamento interno para criar a área de hover */
+    display: inline-block; /* Necessário para aplicar padding e border corretamente */
+}
+
+.navegacao a:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-decoration: solid 
+}
+
+.produtos {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    /* height: 300px; */
+    
+}
+
+.produto {
+    padding: 6px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px black;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.adicionar-carrinho{
+    width: 20px;
+    height: 20px;
+    border-radius: 0.15rem;
+    text-align: center;
+    background-color: rgba(56, 144, 56, 0.746);
+    
+}
+.produto p {
+    text-align: center;
+}
+.produto .fotos {
+    /* Estilos específicos para a imagem dentro de .produto */
+    width: 100%;
+    height: 150px;
+    transition: transform 0.3s ease; /* Transição suave para hover */
+}
+
+.produto .fotos:hover {
+    transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
+}
+
+.produto-rodape {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+.produto .adicionar-carrinho {
+    display: inline-block;
+    padding: 4px;
+    box-sizing: content-box;
+    border: none;
+}
+
+.produto .adicionar-carrinho:hover {
+    display: block;
+    transform: scale(1.1);
+}
+
+
+footer {
+    display: inline-flex;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+li {
+    list-style-type: none;
+    font-size: large;
+}
+
+#footer1 {
+    margin-left: 0px;
+    width: 33.3%;
+    height: 50px;
+
+}
+
+#footer2 {
+    display: grid;
+    justify-content: center;
+    /* margin-left: 0px; */
+    width: 33.3%;
+    height: 50px;
+}
+
+
+#footer3 {
+    
+    margin-left: 0px;
+    width: 33.3%;
+    height: 50px;
+}
+
+/* Login e formulários*/
+.centralizado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 450px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.451);
+   
+}
+
+
+.face {
+    
+    display: flex;   /* inicia o display flex */
+    align-items: center; /* alinha os itens na vertical */
+    justify-content: center; 
+    border: line;
+    text-align: center;
+    border-color: blue;
+    border-radius: 12px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.face:hover {
+    background-color: blue;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.google {
+    
+    display: flex;   /* inicia o display flex */
+    align-items: center; /* alinha os itens na vertical */
+    justify-content: center; 
+    border: line;
+    border-radius: 12px;
+    text-align: center;
+    border-color: red;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.google:hover{
+    background-color: red;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.botao_logar {
+    /*Ajustes do botão de logar*/
+    border: line;
+    border-style: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.451);
+    text-align: center;
+    width: 325px;
+    height: 30px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.botao_logar:hover{
+    background-color: rgba(36, 141, 36, 0.614);
+}
+
+.texto_direita {
+    text-align: right;
+}
+
+
+
+.voadora {
+    /* deixando a imagem a esquerda*/
+    float: left;
+    width: 60px;
+    margin-left: 1px;
+}
+
+.login{ 
+    /*Ajustando para o login ficar ajustado com a imagem*/
+    padding: 0%;
+    margin: 0%;
+}
+
+.cabecalio {
+    /*efetuando os ajustes de alinhamento pro texto não quebrar*/
+    width: 255px;
+    margin-top: 35px;
+}
+
+.botao-container {
+    /*Ajustando os botão para alinharen*/
+    display: flex;
+    justify-content: space-between;
+    width: 50%;   
+}
+
+
+.campos {
+    width: 350px;
+    border: none;
+}
+
+input {
+    
+    width: 320px;
+    height: 20px ;
+    border-radius: 3px;
+    background-color: rgba(208, 204, 204, 0.236);
+    border-style: none ;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.451);
+}
