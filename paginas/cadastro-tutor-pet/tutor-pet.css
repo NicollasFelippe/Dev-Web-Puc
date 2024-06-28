@@ -1,0 +1,166 @@
+body{
+    background-color: #e7e7e7;
+}
+
+header {
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+.header-left-column {
+    width: 25%;
+    display: inline-flex;
+    justify-content: flex-end;    
+}
+
+.header-center-column{
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.header-right-column {
+    width: 25%;    
+}
+
+
+header svg {
+    margin-left: 8px;
+}
+
+
+ header img {
+    
+    float: left;
+    width: 100px;
+    
+} 
+
+.header-input {
+    text-decoration: solid;
+    background-color: var(--corfundo);
+    width: 70%;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    /* padding: 5px; */
+    font-size: 16px;
+    
+}
+
+.header-login {
+    /* display: inline-flex; */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.header-login:visited { 
+    text-decoration: none; 
+    color: black; 
+    cursor: pointer;
+}
+
+.navega {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navegacao{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: bolder;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: black; 
+    padding: 5px 10px; /* Espaçamento interno para criar a área de hover */
+    display: inline-block; /* Necessário para aplicar padding e border corretamente */
+}
+
+.navegacao a:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-decoration: solid 
+}
+
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Altura total da viewport para centralizar verticalmente */
+    padding-top: 50px; /* Ajuste opcional para espaçamento superior */
+}
+
+.form-container {
+    position: relative;
+    background-color: white;
+    width: 90%; /* Ajuste a largura conforme necessário */
+    max-width: 450px; /* Largura máxima para manter o formulário legível */
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.451);
+    padding: 20px; /* Espaçamento interno para melhor visualização */
+    margin-bottom: 30px; /* Espaçamento entre os formulários */
+}
+
+.cabecalio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.voadora {
+    width: 60px;
+    margin-right: 10px; /* Ajuste conforme necessário */
+}
+
+.botao_logar {
+    margin-top: 15px; /* Ajuste conforme necessário */
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.451);
+    text-align: center;
+    width: 100%; /* Botão ocupa toda a largura do container */
+    height: 40px; /* Altura ajustada para melhor usabilidade */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.botao_logar:hover {
+    background-color: rgba(36, 141, 36, 0.614);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px; /* Espaçamento inferior entre labels e inputs */
+}
+
+.input-group input, .input-group select {
+    height: 30px; /* Altura dos inputs e selects */
+    border-radius: 3px;
+    background-color: rgba(208, 204, 204, 0.236);
+    border-style: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.451);
+    padding: 5px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento inferior entre inputs */
+}
