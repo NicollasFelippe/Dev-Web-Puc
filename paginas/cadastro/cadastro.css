@@ -1,3 +1,4 @@
+/* centralizando o formulario */
 .centralizado {
     position: absolute;
     top: 50%;
@@ -16,10 +17,8 @@
 
 
 
-
+    /* estilo do botão logar e hover */
 .botao_logar {
-    /*Ajustes do botão de cadastro*/
-   
     border-style: groove;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.451);
     text-align: center;
@@ -65,7 +64,7 @@
     width: 50%;   
 }
 
-
+ /* abaixo temos os ajustes dos campos do formulário */
 .campos {
     width: 350px;
     border: none;

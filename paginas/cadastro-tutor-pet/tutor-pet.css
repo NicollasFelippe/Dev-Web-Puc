@@ -1,7 +1,7 @@
 body{
     background-color: #e7e7e7;
 }
-
+    /* ajuste no header */
 header {
     height: 120px;
     background-color: white;
@@ -67,7 +67,7 @@ header svg {
     color: black; 
     cursor: pointer;
 }
-
+ /* ajuste no menu navegacao */
 .navega {
     background-color: white;
     display: flex;
@@ -96,7 +96,7 @@ header svg {
     border-radius: 5px;
     text-decoration: solid 
 }
-
+/* ajustando as colunas e fomatando o a ficha */
 .col-md-6 {
     display: flex;
     justify-content: center;

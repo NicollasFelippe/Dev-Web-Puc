@@ -1,9 +1,7 @@
 :root {
     --corfundo:#e7e7e7;
 }
-/* Index */
-
-
+/* os nomes dos seletos estão sujestivos, cada nome se aplica ao local em que ele esta fazendo o estilo */
 main {
     font-family: Montserrat;
     font-weight: 400;

@@ -1,4 +1,4 @@
-/* Login e formulários*/
+/* Login e formulários centralizados*/
 .centralizado {
     position: absolute;
     top: 50%;
@@ -15,7 +15,7 @@
    
 }
 
-
+/* botões e seus hovers */
 .face {
     
     display: flex;   /* inicia o display flex */

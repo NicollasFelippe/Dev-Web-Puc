@@ -1,8 +1,9 @@
+// carregando o arquivo html
 document.addEventListener('DOMContentLoaded', () => {
     const listaCarrinho = document.querySelector('.lista-carrinho');
     const totalCarrinho = document.querySelector('.total-carrinho');
     let total = 0;
-
+    //funcao que atualiza o carrinho e traz para ele todos os dados que estão no localStorage como preco, nome imagem
     function atualizarCarrinho() {
         listaCarrinho.innerHTML = ''; // Limpa a lista antes de recriar
         total = 0;
@@ -25,14 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 total += item.preco;
             });
         }
-
+        //ajustando preco do carrinho
         totalCarrinho.textContent = total.toFixed(2);
         const totalCarrinhoPagamento = document.querySelector('.pagamento .total-carrinho');
         if (totalCarrinhoPagamento) {
         totalCarrinhoPagamento.textContent = total.toFixed(2);
          }
 
-        // Adiciona event listeners para remover itens do carrinho
+        // Adiciona botao de remover ao clicar nos itens do carrinho
         document.querySelectorAll('.remover-item').forEach(button => {
             button.addEventListener('click', (event) => {
                 const itemElement = event.target.closest('.carrinho-item');

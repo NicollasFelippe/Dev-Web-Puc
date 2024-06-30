@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="carrinho.css">
 
 </head>
 
 <body>
+    <!-- cabecalio -->
     <header>
         <div class="header-left-column">
            <a href="../../index.html"> <img  src="../../images/logo only.jpg" alt="logo_petshop"></a>
@@ -31,7 +33,7 @@
         </div>
         
     </header>
-    
+    <!-- navegacao -->
     <div class="navega">
         <nav>  
           <span class="navegacao"> <a class="navegacao" href="../../index.html">Ração</a></span> 
@@ -41,7 +43,7 @@
     </div>
     
     
-    
+    <!-- elementos a serem adicionado no carrinho a esquerda -->
     <div class="container">
         <div class="row no-gutters">
             <div class="col-12 col-sm-6 col-md-8">
@@ -52,7 +54,7 @@
                 </div>
             </div>
 
-
+            <!-- informacoes de pagamento, agendamento e botao de realizar compra -->
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="pagamento">
 
@@ -64,11 +66,15 @@
                     <input type="text" id="frete" placeholder="Busque seu CEP para calcular frete">
                     <br>
                     
-                    <label for="desconto">Cupon de desconto</label><br>
+                    <label for="desconto">Cupom de desconto</label><br>
                     <select id="desconto" name="desconto" class="form-control">
                         <option value="null"></option>
                         <option value="semdesconto">sem desconto no momento</option>
                     </select>
+
+                    <label for="datadeentrega">Agende para entrega ou tele-busca</label>
+                    <input type="datetime-local">
+
                     
                     <div class="carrinho">
                         <p>Total: R$<span class="total-carrinho">0,00</span></p>
@@ -84,8 +90,8 @@
             
         </div>
     </div>
+    <!-- carregando script do carrinho -->
     <script src="carrinho.js"></script>
-        
-        
+              
     </body>
-    </html>
+</html>
